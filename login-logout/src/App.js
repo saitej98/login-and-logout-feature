@@ -16,9 +16,13 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={LogIn} />
+
           <Route path="/register" exact component={Register} />
+
           <ProtectedRoute exact path="/dashboard" component={DashBoard} />
+
           <Route path="*" component={Page404} />
+          
         </Switch>
       </Router>
       <AboutApp />
